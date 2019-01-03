@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="game-board">
+      <div class="game-board__wrapper" id="game-field">
+        <!-- Dynamicly generated items -->
+      </div>
+    </div>
+    <div class="controls">
+      <span class="controls__level"></span>
+      <button class="controls__menu btn" id="menu">menu</button>
+      <button class="controls__reload btn" id="reload"></button>
+      <div class="controls__box">
+        <button class="controls__box__up btn" id="up"></button>
+        <button class="controls__box__left btn" id="left"></button>
+        <button class="controls__box__round"></button>
+        <button class="controls__box__right btn" id="right"></button>
+        <button class="controls__box__down btn" id="down"></button>
+      </div>
+    </div>
+    <div class="overlay">
+      <span id="text">You Won!!</span>
+    </div>
+    <div class="menu-overlay">
+      <div class="close-btn" onclick="slide()"></div>
+      <ul class="menu-overlay__list">
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 1)">Level 1</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 2)">Level 2</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 3)">Level 3</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 4)">Level 4</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 5)">Level 5</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 6)">Level 6</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 7)">Level 7</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 8)">Level 8</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 9)">Level 9</li>
+        <li class="menu-overlay__list__item btn" onclick="pickLevel(event, 10)">Level 10</li>
+        <!-- <li class="menu-overlay__list__item">Level 11</li>
+        <li class="menu-overlay__list__item">Level 12</li>
+        <li class="menu-overlay__list__item">Level 13</li>
+        <li class="menu-overlay__list__item">Level 14</li>
+        <li class="menu-overlay__list__item">Level 15</li> -->
+      </ul>
+    </div>
+    <div class="logo-overlay"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
